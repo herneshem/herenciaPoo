@@ -6,18 +6,12 @@ public class SuperHeroe {
 
     protected String Nombre;
     protected String Descripcion="";
-    protected boolean Capa=false;
+    protected boolean Capa;
     protected String txt = Capa ? "Con capa" : "Sin capa";
 
     public SuperHeroe(String Nombre) {
-
-        Scanner sc = new Scanner(System.in);
-        System.out.print("El nombre es: " + Nombre);
-
-        this.Nombre = sc.nextLine();
-
-
-        System.out.print("Sin capa: " + Capa);
+        Capa=false;
+        this.Nombre = Nombre;
 
     }
 
@@ -29,7 +23,7 @@ public class SuperHeroe {
     //GETTERS AND SETTERS
 
     public String getNombre() {
-        return Nombre;
+        return Nombre="Superman";
     }
 
     public void setNombre(String nombre) {
@@ -54,8 +48,8 @@ public class SuperHeroe {
 
     @Override
     public String toString() {
-        return "SuperHeroe{" +
-                "Nombre='  " + Nombre + '\'' +
+        return "las caracteristicas de SuperHeroe {" +
+                "Nombre=' " + Nombre + '\'' +
                 ", Descripcion=' " + Descripcion + '\'' +
                 ", Capa= " + txt +
                 '}';
