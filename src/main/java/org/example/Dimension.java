@@ -4,6 +4,13 @@ public class Dimension {
 
     int alto, ancho, profundidad;
     int Volumen ;
+
+    public Dimension(){
+        ancho=0;
+        alto=0;
+        profundidad=0;
+    }
+
     public Dimension(int alto, int ancho, int profundidad) {
         this.alto = alto;
         this.ancho = ancho;
@@ -40,7 +47,7 @@ public class Dimension {
 
     @Override
     public String toString() {
-        return "Dimension{" +
+        return "Dimension con parametros {" +
                 "alto=" + alto +
                 ", ancho=" + ancho +
                 ", profundidad=" + profundidad +
